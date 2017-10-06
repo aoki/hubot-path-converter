@@ -8,5 +8,16 @@
     "index.js"
   ],
   "author": "Yoshiki Aoki <ringohub@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "xo --fix",
+    "precommit": "npm run test",
+    "preversion": "npm run test",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "xo": "0.18.2"
+  }
 }
