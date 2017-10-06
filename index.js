@@ -14,12 +14,13 @@
  *   None
  */
 
-module.exports = (robot) => {
-  robot.hear( /\\(.+)/, (msg) => {
-    msg.send(`smb\:\/${msg.match[1].replace(/\\/g, '\/')}`);
-  });
+module.exports = robot => {
+	robot.hear(/\\\\(.+)/, msg => {
+		msg.send(`✨ For :mac: smb://${msg.match[1].replace(/\\/g, '/')}`);
+	});
 
-  robot.hear( /smb:\/\/(.+)/, (msg) => {
-    msg.send(`\\\\${msg.match[1].replace(/\//g, '\\')}`);
-  });
-}
+	robot.hear(/smb:\/\/(.+)/, msg => {
+		msg.send(`✨ For :windows: file://${msg.match[1]} Right click > Open Link`);
+		msg.send(`✨ For :windows: \`\\\\${msg.match[1].replace(/\//g, '\\')}\``);
+	});
+};
