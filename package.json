@@ -5,7 +5,8 @@
   "repository": "https://github.com/ringohub/hubot-path-converter",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "scripts"
   ],
   "author": "Yoshiki Aoki <ringohub@gmail.com>",
   "license": "MIT",
