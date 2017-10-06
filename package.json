@@ -1,6 +1,6 @@
 {
   "name": "hubot-path-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert file path between windows and mac each other",
   "repository": "https://github.com/ringohub/hubot-path-converter",
   "main": "index.js",
